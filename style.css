@@ -1,0 +1,161 @@
+body{
+    margin: auto;
+}
+
+.container{
+    width: 100%;
+   
+  
+    display: flex;
+    justify-content: center;
+   
+}
+.wrapperboxes{
+    width: 80%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+
+
+
+}
+.box1{
+    width: 50%;
+    height: 200px;
+    margin-right: 30px;
+   
+
+}
+.box2{
+    width: 50%;
+    height: 300px;
+    background-image: url(/img/food.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.navbar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.logo{
+    font-family: Baloo;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: -0.25px;
+    color: #242635;
+}
+ul{
+    display: flex;
+    margin: 0;
+}
+
+.dots{
+    visibility: hidden;
+    
+}
+
+li{
+    list-style: none;
+    margin: 5px;
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+
+
+
+color: #242635;
+}
+
+.wrappertext{
+    width: 100%;
+    
+    display: flex;
+    
+
+    
+}
+.text{
+    width: 100%;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 90px;
+    line-height: 102px;
+}
+p{
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 33px;
+}
+
+
+
+
+@media (max-width:770px) {
+
+    .wrapperboxes{
+        flex-direction: column;
+
+    }
+    .box1{
+        width: 100%;
+    }
+    .box2{
+        width: 100%;
+        margin-top: 40px;
+    }
+   .text{
+    font-size: 72px;
+    line-height: 83px;
+    text-align: center;
+   }
+}
+
+
+@media (max-width:420px) {
+
+    .wrapperboxes{
+       
+
+    }
+    .box1{
+        width: 100%;
+    }
+    .box2{
+        width: 100%;
+        
+    }
+   .text{
+    font-size: 36px;
+    line-height: 40px;
+    text-align: center;
+   }
+   p{
+    font-size: 12px;
+    line-height: 18px;
+   }
+   .wrappertext{
+       align-items: flex-end;
+       height: 200px;
+}
+ul{
+    display: none;
+
+}
+.dots{
+   visibility: visible;
+   }
+.navbar{
+    align-items: end;
+}
+}
